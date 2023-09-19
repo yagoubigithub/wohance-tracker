@@ -1,0 +1,30 @@
+1-
+
+api/setting GET
+request
+params
+{
+  email : "email@gmail.com",
+    adminId : "unique_id",
+      platform :  "windows"  ,
+      computerName : "name of computer" 
+}
+process
+//test if adminId exist and the email is on of his employee
+responce 200
+{NPM 
+    email : "email@gmail.com",
+    adminId : "unique_id",
+    nb_screenshots_in_hour : 30,
+    id :  "unique employee id",
+    platform :  "windows",
+    computerName : "name of computer"
+}
+or 400
+{
+    error : "error_message"
+}
+
+/********************************************************************/
+
+2-
